@@ -53,12 +53,14 @@ export async function GET(request: Request): Promise<Response> {
               name: "text",
               label: "Text Area  ||  Send a Message to SOL UI",
               required: true,
+              //@ts-ignore
               type: "textarea",
             },
             {
               name: "token",
               label: "DropDown",
               required: true,
+              //@ts-ignore
               type: "select",
               options: Object.keys(TOKENS).map((token) => ({
                 label: TOKENS[token].name,
